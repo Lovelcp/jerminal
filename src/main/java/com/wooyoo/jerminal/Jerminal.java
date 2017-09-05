@@ -1,7 +1,4 @@
 package com.wooyoo.jerminal;
 
-public enum AnsiColor {
-
-
-
+public class Jerminal {
 }
