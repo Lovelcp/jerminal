@@ -1,4 +1,4 @@
-package com.wooyoo.jterminal;
+package com.wooyoo.jerminal;
 
 public class Test {
     public static void main(String[] args) {
