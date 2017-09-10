@@ -1,6 +1,6 @@
 package com.wooyoo.jerminal;
 
-public enum AnsiForegroundColors {
+public enum AnsiForegroundColors implements AnsiColor {
 
     /*
      * @formatter:off
