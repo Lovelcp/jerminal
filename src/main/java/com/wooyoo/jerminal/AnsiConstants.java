@@ -59,4 +59,12 @@ public class AnsiConstants {
      */
     public static final String ANSI_COLOR_END = "m";
     public static final String RESET_CODE = "0";
+
+    /**
+     * Decoration Codes
+     */
+    public static final String ANSI_BOLD_CODE = "1";
+    public static final String ANSI_UNDERLINE_CODE = "4";
+    public static final String ANSI_REVERSED_CODE = "7";
+    public static final String ANSI_DECORATION_END = "m";
 }

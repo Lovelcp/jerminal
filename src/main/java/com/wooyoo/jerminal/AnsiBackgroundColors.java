@@ -2,9 +2,7 @@ package com.wooyoo.jerminal;
 
 public enum AnsiBackgroundColors implements AnsiColor {
 
-    /*
-     * @formatter:off
-     */
+    // @formatter:off
     BLACK(AnsiConstants.BG_BLACK_CODE),
     RED(AnsiConstants.BG_RED_CODE),
     GREEN(AnsiConstants.BG_GREEN_CODE),
@@ -23,9 +21,7 @@ public enum AnsiBackgroundColors implements AnsiColor {
     BRIGHT_MAGENTA(AnsiConstants.BG_BRIGHT_MAGENTA_CODE),
     BRIGHT_CYAN(AnsiConstants.BG_BRIGHT_CYAN_CODE),
     BRIGHT_WHITE(AnsiConstants.BG_BRIGHT_WHITE_CODE);
-    /*
-     * @formatter:on
-     */
+    // @formatter:on
 
     private final String code;
 

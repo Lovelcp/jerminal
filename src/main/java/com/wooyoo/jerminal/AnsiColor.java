@@ -1,5 +1,4 @@
 package com.wooyoo.jerminal;
 
-public interface AnsiColor {
-    public String getCode();
+public interface AnsiColor extends AnsiCode {
 }

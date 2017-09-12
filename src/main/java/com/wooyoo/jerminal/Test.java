@@ -11,5 +11,7 @@ public class Test {
         sb.append("\033[81m");
         sb.append("aaa;0;39m");
         System.out.println(sb);
+
+        Jerminal.println(new AnsiOutput("hhhh").setRed().setBold());
     }
 }
