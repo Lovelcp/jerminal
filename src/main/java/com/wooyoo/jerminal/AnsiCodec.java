@@ -8,9 +8,13 @@ public class AnsiCodec {
 
     public static String encode(AnsiCode ansiCode, String... inputs) {
         StringBuilder sb = new StringBuilder();
-        parseCode(sb, ansiCode);
+        if (ansiCode != null) {
+            parseCode(sb, ansiCode);
+        }
         for (String input : inputs) {
-            sb.append(input);
+            if (input != null) {
+                sb.append(input);
+            }
         }
         reset(sb);
         return sb.toString();
@@ -19,16 +23,23 @@ public class AnsiCodec {
     public static String encode(List<AnsiCode> ansiCodes, String... inputs) {
         StringBuilder sb = new StringBuilder();
         for (AnsiCode code : ansiCodes) {
-            parseCode(sb, code);
+            if (code != null) {
+                parseCode(sb, code);
+            }
         }
         for (String input : inputs) {
-            sb.append(input);
+            if (input != null) {
+                sb.append(input);
+            }
         }
         reset(sb);
         return sb.toString();
     }
 
     private static void parseCode(StringBuilder sb, AnsiCode ansiCode) {
+        if (ansiCode == null) {
+            return;
+        }
         if (ansiCode instanceof AnsiColor) {
             setColor(sb, ansiCode);
         }

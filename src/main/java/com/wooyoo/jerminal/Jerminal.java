@@ -3,7 +3,7 @@ package com.wooyoo.jerminal;
 import java.io.PrintStream;
 
 public class Jerminal {
-    public final static PrintStream out = System.out;
+    private final static PrintStream out = System.out;
 
     public static void println(AnsiOutput output) {
         out.println(output);
