@@ -1,5 +1,11 @@
 package com.wooyoo.jerminal;
 
+import com.wooyoo.jerminal.move.AnsiDownMove;
+import com.wooyoo.jerminal.move.AnsiLeftMove;
+import com.wooyoo.jerminal.move.AnsiLeftmostMove;
+import com.wooyoo.jerminal.move.AnsiRightMove;
+import com.wooyoo.jerminal.move.AnsiUpMove;
+
 public class AnsiOutputBuilder {
     private AnsiOutput ansiOutput;
 
@@ -56,4 +62,28 @@ public class AnsiOutputBuilder {
         return this;
     }
 
+    public AnsiOutputBuilder left(int num) {
+        ansiOutput.setHorizontalMove(new AnsiLeftMove(num));
+        return this;
+    }
+
+    public AnsiOutputBuilder right(int num) {
+        ansiOutput.setHorizontalMove(new AnsiRightMove(num));
+        return this;
+    }
+
+    public AnsiOutputBuilder up(int num) {
+        ansiOutput.setVerticalMove(new AnsiUpMove(num));
+        return this;
+    }
+
+    public AnsiOutputBuilder down(int num) {
+        ansiOutput.setVerticalMove(new AnsiDownMove(num));
+        return this;
+    }
+
+    public AnsiOutputBuilder leftmost() {
+        ansiOutput.setHorizontalMove(new AnsiLeftmostMove());
+        return this;
+    }
 }

@@ -1,5 +1,7 @@
 package com.wooyoo.jerminal;
 
+import com.wooyoo.jerminal.move.AnsiMove;
+
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,6 +11,8 @@ public class AnsiOutput {
     private AnsiColor background;
     private AnsiColor foreground;
     private Set<AnsiDecoration> decorations = new HashSet<>();
+    private AnsiMove verticalMove; // 垂直移动
+    private AnsiMove horizontalMove; // 水平移动
     private String content;
 
     public AnsiColor getBackground() {
@@ -43,12 +47,24 @@ public class AnsiOutput {
         return this;
     }
 
+    public AnsiOutput setVerticalMove(AnsiMove ansiMove) {
+        this.verticalMove = ansiMove;
+        return this;
+    }
+
+    public AnsiOutput setHorizontalMove(AnsiMove ansiMove) {
+        this.horizontalMove = ansiMove;
+        return this;
+    }
+
     @Override
     public String toString() {
         if (content == null) {
             content = "";
         }
         List<AnsiCode> codes = new LinkedList<>();
+        codes.add(verticalMove);
+        codes.add(horizontalMove);
         codes.add(foreground);
         codes.add(background);
         codes.addAll(decorations);

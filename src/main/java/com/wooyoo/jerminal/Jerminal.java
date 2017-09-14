@@ -1,12 +1,49 @@
 package com.wooyoo.jerminal;
 
+import com.wooyoo.jerminal.move.AnsiLeftMove;
+import com.wooyoo.jerminal.move.AnsiLeftmostMove;
+import com.wooyoo.jerminal.move.AnsiRightMove;
+
 import java.io.PrintStream;
 
 public class Jerminal {
     private final static PrintStream out = System.out;
 
+    /**
+     * 向左移动
+     *
+     * @param num
+     */
+    public static void moveLeft(int num) {
+        out.print(AnsiCodec.encode(new AnsiLeftMove(num)));
+    }
+
+    /**
+     * 向右移动
+     *
+     * @param num
+     */
+    public static void moveRight(int num) {
+        out.print(AnsiCodec.encode(new AnsiRightMove(num)));
+    }
+
+    /**
+     * 移动到最左侧
+     */
+    public static void moveLeftmost() {
+        out.print(AnsiCodec.encode(new AnsiLeftmostMove()));
+    }
+
     public static void println(AnsiOutput output) {
         out.println(output);
+    }
+
+    public static void print(AnsiOutput output) {
+        out.print(output);
+    }
+
+    public static void print(String output) {
+        out.print(output);
     }
 
     public static void printlnInRed(String str) {

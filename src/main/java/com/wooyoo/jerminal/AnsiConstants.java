@@ -67,4 +67,12 @@ public class AnsiConstants {
     public static final String ANSI_UNDERLINE_CODE = "4";
     public static final String ANSI_REVERSED_CODE = "7";
     public static final String ANSI_DECORATION_END = "m";
+
+    /**
+     * Movement direction
+     */
+    public static final String ANSI_UP_END = "A";
+    public static final String ANSI_DOWN_END = "B";
+    public static final String ANSI_RIGHT_END = "C";
+    public static final String ANSI_LEFT_END = "D";
 }
