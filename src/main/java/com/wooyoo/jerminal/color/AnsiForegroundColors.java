@@ -1,4 +1,7 @@
-package com.wooyoo.jerminal;
+package com.wooyoo.jerminal.color;
+
+import com.wooyoo.jerminal.AnsiConstants;
+import com.wooyoo.jerminal.color.AnsiColor;
 
 public enum AnsiForegroundColors implements AnsiColor {
 

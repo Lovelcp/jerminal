@@ -1,4 +1,6 @@
-package com.wooyoo.jerminal;
+package com.wooyoo.jerminal.decoration;
+
+import com.wooyoo.jerminal.AnsiConstants;
 
 public enum AnsiDecorations implements AnsiDecoration {
 

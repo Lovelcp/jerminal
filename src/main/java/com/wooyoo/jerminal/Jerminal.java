@@ -1,5 +1,6 @@
 package com.wooyoo.jerminal;
 
+import com.wooyoo.jerminal.color.AnsiForegroundColors;
 import com.wooyoo.jerminal.move.AnsiMoveLeft;
 import com.wooyoo.jerminal.move.AnsiMoveLeftmost;
 import com.wooyoo.jerminal.move.AnsiMoveRight;

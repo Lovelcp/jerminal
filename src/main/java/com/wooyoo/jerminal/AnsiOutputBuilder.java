@@ -1,5 +1,8 @@
 package com.wooyoo.jerminal;
 
+import com.wooyoo.jerminal.color.AnsiBackgroundColors;
+import com.wooyoo.jerminal.color.AnsiForegroundColors;
+import com.wooyoo.jerminal.decoration.AnsiDecorations;
 import com.wooyoo.jerminal.move.AnsiMoveDown;
 import com.wooyoo.jerminal.move.AnsiMoveLeft;
 import com.wooyoo.jerminal.move.AnsiMoveLeftmost;

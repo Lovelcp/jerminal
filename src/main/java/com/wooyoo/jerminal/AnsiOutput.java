@@ -1,5 +1,7 @@
 package com.wooyoo.jerminal;
 
+import com.wooyoo.jerminal.color.AnsiColor;
+import com.wooyoo.jerminal.decoration.AnsiDecoration;
 import com.wooyoo.jerminal.move.AnsiMove;
 
 import java.util.HashSet;
