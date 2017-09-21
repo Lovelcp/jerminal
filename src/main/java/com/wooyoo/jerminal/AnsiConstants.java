@@ -71,8 +71,8 @@ public class AnsiConstants {
     /**
      * Movement direction
      */
-    public static final String ANSI_UP_END = "A";
-    public static final String ANSI_DOWN_END = "B";
-    public static final String ANSI_RIGHT_END = "C";
-    public static final String ANSI_LEFT_END = "D";
+    public static final String ANSI_UP = "A";
+    public static final String ANSI_DOWN = "B";
+    public static final String ANSI_RIGHT = "C";
+    public static final String ANSI_LEFT = "D";
 }
